@@ -1,11 +1,7 @@
 class Rectangle:
-    def __init__(self, *args):
-        if len(args) == 1:
-            self.width = args[0]
-            self.height = args[0]
-        else:
-            self.width = args[0]
-            self.height = args[1]
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
 
     def __str__(self):
         return f'Rectangle(width={self.width}, height={self.height})'
@@ -37,6 +33,9 @@ class Rectangle:
         return int(self.get_area() / shape.get_area())
 
 class Square(Rectangle):
+    def __init__(self, side):
+        super().__init__(side, side)
+    
     def set_side(self, newSide):
         self.width = newSide
         self.height = newSide
