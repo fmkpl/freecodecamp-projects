@@ -1,5 +1,7 @@
 repository for my projects from freecodecamp.org
 
+<b>----- Scientific Computing with Python -----</b>
+
 1) Finish the arithmetic_arranger function that receives a list of strings which are arithmetic problems, and returns the problems arranged vertically and side-by-side. The function should optionally take a second argument. When the second argument is set to True, the answers should be displayed.
 
 2) A Binary Search Tree (BST) is an common data structure where data is sorted hierarchically.
